@@ -1,0 +1,71 @@
+#keyboard {
+    display: block;
+    width: 1000px;
+   
+     
+}
+/* #keyboard::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.k-key {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    color: white;
+    background-color: #3a424e;
+    border-radius: 5px;
+    font-size: 19px;
+}
+
+.clearfix {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.active {
+    background-color: #5571ee;
+    transition: 0.5s;
+}
+.specials {
+    background-color: #1c232e;
+}
+
+.bigSpecials {
+    width: 140px;
+}
+.tab {
+    width: 140px;
+}
+.del {
+    width: 58px;
+}
+.caps {
+    width: 140px;
+}
+.enter {
+    width: 113px;
+}
+.margin {
+    display: block;
+    height: 73%;
+    width: 100%;
+    padding-top: 13px;
+    border-radius: 5px;
+    
+}
+.backspace {
+    width: 200px;
+}
+.space {
+    width: 433px;
+}
+.ctrl {
+    width: 90px;
+}
