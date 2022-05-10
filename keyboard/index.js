@@ -1,6 +1,10 @@
 const div = document.createElement('div');
+const link = document.createElement('div');
+link.setAttribute('id', 'link');
 div.setAttribute('id', 'keyboard');
+document.body.append(link);
 document.body.append(div);
+
 const keyboardKeys = [['Backquote', '`'], ['Digit1', '1'], ['Digit2', '2'], ['Digit3', '3'], ['Digit4', '4'], ['Digit5', '5'], ['Digit6', '6'], ['Digit7', '7'], ['Digit8', '8'], ['Digit9', '9'], ['Digit0', '0'], ['Equal', '='], ['Backspace', 'Backspace'], ['Tab', 'Tab'], ['KeyQ', 'Q'], ['KeyW', 'W'], ['KeyE', 'E'], ['KeyR', 'R'], ['KeyT', 'T'], ['KeyY', 'Y'], ['KeyU', 'U'], ['KeyI', 'I'], ['KeyO', 'O'], ['KeyP', 'P'], ['BracketLeft', '['], ['BracketRight', ']'], ['Backslash', '&#92;'], ['CapsLock', 'Caps Lock'], ['KeyA', 'A'], ['KeyS', 'S'], ['KeyD', 'D'], ['KeyF', 'F'], ['KeyG', 'G'], ['KeyH', 'H'], ['KeyJ', 'J'], ['KeyK', 'K'], ['KeyL', 'L'], ['Semicolon', ';'], ['Quote', "'"], ['Enter', 'Enter'], ['ShiftLeft', 'Shift'], ['Backslash', '&#92;'], ['KeyZ', 'Z'], ['KeyX', 'X'], ['KeyC', 'C'], ['KeyV', 'V'], ['KeyB', 'B'], ['KeyN', 'N'], ['KeyM', 'M'], ['Comma', ','], ['Period', '.'], ['Slash', '/'], ['ArrowUp', ''], ['ShiftRight', 'Shift'], ['ControlLeft', 'Ctrl'], ['Meta', 'Win'], ['Space', ''], ['AltLeft', 'Alt'], ['ControlRight', 'Ctrl'], ['ArrowLeft', ''], ['ArrowDown', ''], ['ArrowRight', '']];
 // document.addEventListener('keypress', function(event){
 //     keyboard.push(event.key);
@@ -65,3 +69,7 @@ document.addEventListener('click', () => {
   });
   this.classList.add('active');
 });
+function pullLink() {
+  document.querySelector('#link').innerHTML = '<a href="https://github.com/Ilka228/virtual-keyboard/pull/1">Прошу прощения, я по невнимательности засабмитил ссылку на gh-pages, вот ссылка на pull request</a>';
+}
+pullLink();
